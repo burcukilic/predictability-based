@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "predictability-based"
+version = "0.1.0"
+description = "Predictability-Based Curiosity-Guided Action Symbol Discovery"
+authors = [{ name = "Burcu Kilic" }]
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "numpy",
+    "matplotlib",
+    "pybullet",
+    "tqdm",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
